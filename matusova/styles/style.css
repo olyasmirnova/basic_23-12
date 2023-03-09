@@ -1,0 +1,47 @@
+body {
+  color: black;
+  font: 16px/22px Arial, sans-serif;
+  width: 1360px;
+  margin: 0 auto;
+}
+
+.logo {
+  cursor: pointer;
+  width: 124px;
+  height: 148px;
+}
+
+.menu {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.menu-element {
+  display: inline-block;
+  padding: 10px;
+}
+
+.link {
+  color: orangered;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.box {
+  text-align: center;
+}
+
+.chapter {
+  width: 430px;
+  border: 1px solid orangered;
+  display: inline-block;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 20px;
+}
