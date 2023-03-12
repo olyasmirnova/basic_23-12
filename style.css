@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?hx6q2z');
+    src:  url('../fonts/icomoon.eot?hx6q2z#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?hx6q2z') format('truetype'),
+      url('../fonts/icomoon.woff?hx6q2z') format('woff'),
+      url('../fonts/icomoon.svg?hx6q2z#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-google3:before {
+    content: "\ea8a";
+}
+.icon-facebook2:before {
+    content: "\ea91";
+}
+  .icon-instagram:before {
+    content: "\ea92";
+}
+  .icon-twitter:before {
+    content: "\ea96";
+}
+.icon-linkedin:before {
+    content: "\eac9";
+}
+body{
+    margin: o;
+    background: white;
+    color: white;
+    font: 400 16px/26px 'latoregular',sans-serif;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.icon-instagram{
+    color: red;
+}
+.icon-google3{
+    color: green;
+}
+.icon-facebook2{
+    color: darkblue;
+}
+.icon-linkedin{
+    color: blueviolet;
+}
+.icon-twitter{
+    color: rgb(39, 75, 4);
+}
+.icon-google{
+    color: darkgreen;
+}
+.anime{
+    margin-top: 170px;
+    width: 170px;
+    height: 70px;
+    background: aqua;
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid darkblue;
+    font-weight: 800;
+}
+.ico{
+    width: 80px;
+    padding: 5px 10px 5px;
+    background: #a0f5e2;
+    border: 1px solid rgb(58, 4, 207);
+}
+.text{
+    color: darkblue;
+    padding: 5px 5px 15px 5px;
+    text-align: center;
+    animation: 2s show ease infinite;
+}
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+.google{
+    position: relative;
+    top: -7px;
+    left: 35px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    opacity: 0;
+    transition: 2s;
+}
+.anime:hover .google{
+    opacity: 1;
+    transition: 2s;
+}
+
+.nav{
+    position: relative;
+    background: #333333;
+    z-index: 1;
+    border-bottom: 2px solid #009eff;
+    border-top: 1px solid #333333;
+}
+.nav-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-link{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.nav-item{
+    position: relative;
+    display: flex;
+    width: 120px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link:hover{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: -1px;
+}
+.nav-item:hover::after{
+    content: "+";
+    position: relative;
+    top: -2px;
+    left : 5px;
+    color: white;
+}
+.nav-item:hover{
+    background: #009eff;
+}
+.drop-down{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #009eff;
+    z-index: -1;
+    opacity: 0;
+    transition: 1.5s;
+}
+.nav-item:hover .drop-down{
+    opacity: 1;
+    transition: 1s;
+}
+.drop-item{
+    height: 28px;
+    width: 230px;
+    padding: 20px;
+    color: white;
+    background: #009eff;
+    border: 1px solid  #009eff;
+    text-align: start;
+}
+.drop-item::before{
+    content: "+";
+    position: relative;
+    top: 2px;
+    right: -220px;
+}
+.drop-item:hover{
+   background: #00a9ff;
+   border: 1px solid #009eff;
+}
+.drop-link{
+    text-decoration: none;
+    color: white;
+    background:#00a9ff;
+}
+.drop-link:hover{
+    background:#00a9ff;
+}
+.drop-side{
+    position: relative;
+    top: -47px;
+    right: -250px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background:#009eff;
+   opacity: 0;
+   transition: 1.5s;
+}
+.drop-item:hover .drop-side{
+   opacity: 1;
+   transition: 1s;
+}
+.drop-side:hover{
+    background: #00a9ff;
+}
+.side:hover{
+    background: #00a9ff;
+    border: 1px solid #009eff;
+}
+.side{
+    display:flex;
+    width: 230px;
+    padding: 20px;
+    color: white;
+    background: #009eff;
+    border: 1px solid #009eff;
+    text-align: start;
+}
+
+
